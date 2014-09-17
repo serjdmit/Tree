@@ -1,0 +1,105 @@
+ul {
+    list-style: none;
+    color: #4291d0;
+    font: 20px/30px Arial, sans-serif;
+    padding-left:15px;
+}
+
+#tree {
+    border: 1px solid #4291d0;
+    width:600px;
+    padding-left:10px;
+    margin:20px auto;
+    overflow:hidden;
+}
+
+.sub {
+    position:relative;
+}
+
+hr {
+    width:200%;
+    height:1px;
+    background:#ccc;
+    display:block;
+    border:0;
+    margin:0 0 0 -200px;
+}
+
+
+li:before {
+    content:'\25a0';
+    padding-right: 10px;
+
+}
+
+li.submenu:before {
+    content:'\2d \20 \25a0';
+    padding-right: 10px;
+    margin-left:-10px;
+
+}
+
+li.active:before {
+    content:'\2b  \20 \25a0' !important;
+    padding-right: 5px;
+    margin-left:-10px;
+}
+
+.text{
+    display:inline-block;
+    width:250px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    vertical-align: -9px;
+}
+
+li.submenu>.text{
+    cursor:pointer;
+}
+
+ul li span.edit {
+    float:right;
+}
+
+ul li span.edit span {
+    margin-right:20px;
+    display:inline-block;
+    font-size:12px;
+    vertical-align: 3px;
+    cursor:pointer;
+}
+
+.remove {
+    color:#e03197;
+}
+
+ul li span.edit span:before {
+    content:'';
+    width:12px;
+    height:12px;
+    display:inline-block;
+    margin-right:5px;
+}
+
+.controls span {
+    font: 22px/33px Arial, sans-serif;
+    color: #4291d0;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.controls span:hover {
+    text-decoration: none;
+}
+
+.add:before {
+    content:'+' !important;
+}
+
+.rename:before {
+    content:'\270e' !important;
+}
+
+.remove:before {
+    content:'\d7' !important;
+}

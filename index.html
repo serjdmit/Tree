@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree of objects</title>
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/styles/normalize.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+</head>
+<body>
+<div id="tree">
+    <span class="controls"><span class="create">Create New Element</span></span>
+    <ul class="sub general">
+        <hr><li><span class="text">Element #1</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+        <hr><li><span class="text">Element #2</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+        <hr><li class="submenu"><span class="text">Element #3</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span>
+            <ul class="sub active">
+                <hr><li class="submenu"><span class="text">Child #1 of Element #3</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span>
+                    <ul class="sub">
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                    </ul>
+                </li>
+                <hr><li class="submenu"><span class="text">Child #2 of Element #3</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span>
+                    <ul class="sub active">
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                    </ul>
+                </li>
+                <hr><li class="submenu"><span class="text">Child #3 of Element #3</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span>
+                    <ul class="sub">
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                        <hr><li><span class="text">Subchild</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <hr><li><span class="text">Element #4</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+        <hr><li><span class="text">Element #5</span><span class="edit"><span class="add">Add</span><span class="rename">Rename</span><span class="remove">Remove</span></span></li>
+    </ul>
+</div>
+</body>
+</html>
